@@ -10,7 +10,7 @@
     <body>
         <header> <!--Cabeçalho principal-->
             <div class="caixa">
-                <h1><img src="img/logo.png"></h1>
+                <h1><img src="img/logo.png" alt="Logo da Barbearia Alura"></h1> <!--tag alt para descrever imagem - acessibilidade-->
                     
                 <nav>
                     <ul>
@@ -25,19 +25,19 @@
         <main>
             <form> <!--tag pora criação do formulário-->
                 <label for="nomesobrenome">Nome e sobrenome:</label> <!--etiqueta do input-->
-                <input type="text id="nomesobrenome" class="input-padrao"> <!--entrada de dados-->
+                <input type="text id="nomesobrenome" class="input-padrao" required> <!--entrada de dados--> <!--required indica que é obrigatório-->
 
                 <label for="email">E-mail:</label>
-                <input type="email id="email" class="input-padrao">
+                <input type="email id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel id="telefone" class="input-padrao">
+                <input type="tel id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
 
                 <label for="mensagem">Mensagem:</label>
-                <textarea cols="30" rows="10" id="mensagem" class="input-padrao"></textarea>
+                <textarea cols="30" rows="10" id="mensagem" class="input-padrao" required></textarea>
 
-                <div>
-                    <p>Como prefere o nosso contato?</p>
+                <fieldset> <!--referente a um assunto específico-->
+                    <legend>Como prefere o nosso contato?</legend> <!--tipo do fieldset é chamado de legend (título)-->
                     <label for="radio-email"><input type="radio" name="contato" value="email" 
                     id="radio-email">E-mail</label>
 
@@ -45,26 +45,26 @@
                     id="radio-telefone">Telefone</label>
 
                     <label for="radio-whatsapp"><input type="radio" name="contato" value="email" 
-                    id="radio-whatsapp">WhatsApp</label>             
-                </div>
+                    id="radio-whatsapp" checked>WhatsApp</label> <!--checked = sugestão de marcação-->          
+                </fieldset>
 
-                <div>
-                    <p>Qual horário prefere ser atendido?</p>
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
                     <select> <!--campo de seleção de um item-->
                         <option>Manhã</option> <!--opções do seletor-->
                         <option>Tarde</option>
                         <option>Noite</option>
                     </select>
-                </div>
+                </fieldset>
 
-                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
 
                 <input type="submit" value="Enviar formulário">
             </form>
         </main>
 
         <footer> <!--rodapé-->
-            <img src="img/logo-branco.png">
+            <img src="img/logo-branco.png" alt="Logo da Barbearia Alura">
             <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p> <!--símbolo adicionado pela tabela unicode-->
         </footer>
     </body>
