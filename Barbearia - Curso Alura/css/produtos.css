@@ -77,3 +77,15 @@ nav a:hover {
     font-weight: bold;
     margin-top: 10px; /* mesma coisa que: margin: 10px 0 0;*/
 }
+
+footer {
+    text-align: center;
+    background: url("/Barbearia - Curso Alura/img/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+}
