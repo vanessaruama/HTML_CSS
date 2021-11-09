@@ -52,3 +52,15 @@ ul {
 .imagembeneficios {
     width: 50%
 }
+
+footer {
+    text-align: center;
+    background: url("/Barbearia - Curso Alura/img/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0;
+}
