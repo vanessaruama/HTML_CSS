@@ -91,10 +91,11 @@ footer {
 .copyright {
     color: #FFFFFF;
     font-size: 13px;
-    margin: 20px 0;
+    margin: 20px 0 0;
 }
 
 main {
+
 }
 
 form {
@@ -235,11 +236,36 @@ td, th {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px 0 #000000; /*X Y Blur Sombra #*/
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
     width: 560px;
     margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }    
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
 }
 
 /*---------------------------LEMBRETES--------------------------------------*/
@@ -262,4 +288,9 @@ main > p {} - seleciona o elemento filho direto
 img + p {} - seleciona o primeiro irmão (vem logo após)
 img ~ p {} - seleciona todos os seletores que vem depois de uma imagem
 principal p:not(#missao) - seleciona todos os paragrafos que não são missão
+*/
+
+/*
+box-shadow: inset 0 0 30px #FF0000; -- sombra interna
+text-shadow: 2px 2px red; -- sombra no texto
 */
