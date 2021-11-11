@@ -84,7 +84,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background: url("/Barbearia - Curso Alura/img/bg.jpg");
+    background: url("/Site Barbearia/img/bg.jpg");
     padding: 40px 0;
 }
 
@@ -229,6 +229,10 @@ td, th {
     font-weight: bold;
 }
 
+.itens:before {
+    content: "🟊";
+}
+
 .imagem-beneficios {
     width: 60%;
 }
@@ -238,6 +242,7 @@ td, th {
     margin: 2em auto;
 }
 
+/*---------------------------LEMBRETES--------------------------------------*/
 /*
 Herança CSS
 Força: 
@@ -250,4 +255,11 @@ Aquele com maior força será aplicado
 
 /*
 transform: rotate(70deg); || adicionar rotação
+*/
+
+/*
+main > p {} - seleciona o elemento filho direto
+img + p {} - seleciona o primeiro irmão (vem logo após)
+img ~ p {} - seleciona todos os seletores que vem depois de uma imagem
+principal p:not(#missao) - seleciona todos os paragrafos que não são missão
 */
